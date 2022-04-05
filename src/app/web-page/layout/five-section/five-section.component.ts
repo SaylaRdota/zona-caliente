@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FiveSectionComponent implements OnInit {
 
-  title: string = 'Comercializadora por exelencia de la marca Solaris';
+  title: string = 'Comercializadora por excelencia de la marca Solaris';
 
   constructor() { }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 export class Section {
   id: number;
@@ -93,8 +94,7 @@ export class MainSectionComponent implements OnInit {
   randomSectionIndex: number = 0;
   yet: boolean = false;
 
-  constructor() { }
-
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
     this.buildSectionRender();
@@ -135,4 +135,7 @@ export class MainSectionComponent implements OnInit {
     })
   }
 
+  openScrollableContent(longContent: any) {
+    this.modalService.open(longContent, { scrollable: true });
+  }
 }

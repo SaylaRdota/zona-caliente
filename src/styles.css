@@ -71,9 +71,13 @@
 }
 
 .parallax {
-  background-image: url('./assets/images/parallax.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/images/parallax.png');
   min-height: 100vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 8% !important;
 }

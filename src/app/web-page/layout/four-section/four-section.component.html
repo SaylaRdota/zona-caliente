@@ -1,19 +1,7 @@
 <div class="parallax adjust-padding">
   <ngb-carousel>
-    <ng-template ngbSlide>
-      <app-product-group [products]="getSplitInGroups()[0]"></app-product-group>
-    </ng-template>
-     <ng-template ngbSlide>
-      <app-product-group [products]="getSplitInGroups()[1]"></app-product-group>
-    </ng-template>
-   <ng-template ngbSlide>
-      <app-product-group [products]="getSplitInGroups()[2]"></app-product-group>
-    </ng-template>
-   <ng-template ngbSlide>
-      <app-product-group [products]="getSplitInGroups()[3]"></app-product-group>
-    </ng-template>
-   <ng-template ngbSlide>
-      <app-product-group [products]="getSplitInGroups()[4]"></app-product-group>
+    <ng-template ngbSlide *ngFor="let group of splitInGroups">
+      <app-product-group [products]="group"></app-product-group>
     </ng-template>
   </ngb-carousel>
   <app-five-section></app-five-section>

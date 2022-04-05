@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { Product } from '../four-section.component';
 
 @Component({
@@ -9,6 +9,8 @@ import { Product } from '../four-section.component';
 export class ProductGroupComponent implements OnInit {
   @Input('products') products: Array<Product> = [];
   constructor() { }
+
+  
 
   ngOnInit(): void {
   }

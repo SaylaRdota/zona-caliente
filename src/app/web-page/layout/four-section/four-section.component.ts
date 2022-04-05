@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 export interface Product {
   title: string,
@@ -45,12 +45,12 @@ export class FourSectionComponent implements OnInit {
       description: 'Largo: 39,5cm, Ancho: 36,5cm, Asa: 50cm, Ancho: 3,81cm',
       url: 'assets/images/5~1.png'
     },
-    {
-      title: 'Bolso juvenil de Poly',
-      subtitle: 'Bolso de poly impreso en serigrafía con cinta rigida de poliester y bolsillo interior',
-      description: 'Largo: 39,5cm, Ancho: 36,5cm, Asa: 50cm, Ancho: 3,81cm',
-      url: 'assets/images/6~1.png'
-    },
+    // {
+    //   title: 'Bolso juvenil de Poly',
+    //   subtitle: 'Bolso de poly impreso en serigrafía con cinta rigida de poliester y bolsillo interior',
+    //   description: 'Largo: 39,5cm, Ancho: 36,5cm, Asa: 50cm, Ancho: 3,81cm',
+    //   url: 'assets/images/6~1.png'
+    // },
     {
       title: 'Bolso juvenil de Poly',
       subtitle: 'Bolso de poly impreso en serigrafía con cinta rigida de poliester y bolsillo interior',
@@ -99,27 +99,38 @@ export class FourSectionComponent implements OnInit {
     },
   ]
 
+  splitInGroups: Array<Array<Product>> = [];
+
+  @HostListener('window:resize', ['$event'])
+    getScreenSize() {
+          if(window.innerWidth > 700) {
+            this.getSplitInGroups(3);
+          }else {
+            this.getSplitInGroups(1);
+          }
+    }
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {  
+    this.getSplitInGroups(3);
+    this.getScreenSize();
   }
 
-  getSplitInGroups(): Array<Array<Product>> {
-    const groups: Array<Array<Product>> = [];
+  getSplitInGroups(count: number) {
     let group: Array<Product> = [];
+    this.splitInGroups = [];
     let index = 0;
     this.products.forEach((product: Product) => {
-      if (index == 3) {
+      if (index == count) {
         index = 0;
-        groups.push(group);
+        this.splitInGroups.push(group);
         group = [].slice();
       }
       group.push(product);
       index++;
     })
     if (group.length > 0) {
-      groups.push(group);
+      this.splitInGroups.push(group);
     }
-    return groups;
   }
 }

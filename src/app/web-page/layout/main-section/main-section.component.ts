@@ -90,6 +90,8 @@ export class MainSectionComponent implements OnInit {
   ];
 
   sectionRender: Array<string> = [];
+  randomSectionIndex: number = 0;
+  yet: boolean = false;
 
   constructor() { }
 
@@ -98,13 +100,18 @@ export class MainSectionComponent implements OnInit {
     this.buildSectionRender();
     const sectionSize = this.sections.length;
     setInterval(() => {
-      const randomSectionIndex = this.randomNumber(0, sectionSize);
-      const sectionImagesSize =  this.sections[randomSectionIndex].images.length;
+      this.yet =true;
+      this.randomSectionIndex = this.randomNumber(0, sectionSize);
+      const sectionImagesSize =  this.sections[this.randomSectionIndex].images.length;
       const randomSectionImage: string =
-      this.sections[randomSectionIndex].images[this.randomNumber(0, sectionImagesSize)];
+      this.sections[this.randomSectionIndex].images[this.randomNumber(0, sectionImagesSize)];
 
-      this.sectionRender[randomSectionIndex] = randomSectionImage;
-    }, 1000)
+      setTimeout(() => {
+        this.sectionRender[this.randomSectionIndex] = randomSectionImage;
+        this.yet = false;
+      }, 1000);
+      
+    }, 2000)
   }
 
   randomNumber(min: number, max: number) {

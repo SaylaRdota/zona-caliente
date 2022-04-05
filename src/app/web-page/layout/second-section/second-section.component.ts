@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondSectionComponent implements OnInit {
 
-  text: string = `Lorem ipsum dolor sit amet, consectetur adipiscing
+  text1: string = `Lorem ipsum dolor sit amet, consectetur adipiscing
   elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
    Ut enim ad minim veniam,` ;
 
+  text2: string = `Lorem ipsum dolor sit amet, consectetur adipiscing
+  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+   Ut enim ad minim veniam,` ;
+
+   hoveredSession = 1;
   constructor() { }
 
   ngOnInit(): void {

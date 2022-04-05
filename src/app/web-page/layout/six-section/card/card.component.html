@@ -1,9 +1,9 @@
 <div class="six-section-card">
-  <div class="row h-100">
-    <div *ngIf="invert" class="col-5 h-100 b-white">
+  <div class="row">
+    <div *ngIf="invert" class="col-md-5 h-100 b-white">
       <img [src]="product?.url" alt="">
     </div>
-    <div class="col-7 h-100 b-yellow">
+    <div class="col-md-7 h-100 b-yellow">
       <div class="six-section-content">
         <p class="title c-primary">
             {{product?.title}}
@@ -13,7 +13,7 @@
         </p>
       </div>
     </div>
-    <div *ngIf="!invert" class="col-5 h-100 b-white">
+    <div *ngIf="!invert" class="col-md-5 h-100 b-white">
       <img [src]="product?.url" alt="">
     </div>
   </div>

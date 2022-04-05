@@ -39,7 +39,7 @@ export class MainSectionComponent implements OnInit {
     ),
     new Section(2, [
       'assets/images/Grupo 100.png',
-      'assets/images/_MG_9519.png'
+      'assets/images/MG_9519.png'
     ]),
     new Section(3, [
       'assets/images/rect 6.png',
@@ -48,14 +48,14 @@ export class MainSectionComponent implements OnInit {
     ]),
      new Section(4, [
       'assets/images/Grupo 39.png',
-      'assets/images/_MG_9627.png',
-      'assets/images/_MG_9639.png',
-      'assets/images/_MG_9662.png',
-      'assets/images/_MG_9691.png',
+      'assets/images/MG_9627.png',
+      'assets/images/MG_9639.png',
+      'assets/images/MG_9662.png',
+      'assets/images/MG_9691.png',
     ]),
     new Section(5, [
       'assets/images/Grupo 11.png',
-      'assets/images/_MG_9705.png',
+      'assets/images/MG_9705.png',
       'assets/images/6.png'
     ]),
      new Section(6, [
@@ -78,8 +78,8 @@ export class MainSectionComponent implements OnInit {
       'assets/images/rect 114.png'
     ]),
     new Section(10, [
-      'assets/images/_MG_9639.png',
-      'assets/images/_MG_9691.png',
+      'assets/images/MG_9639.png',
+      'assets/images/MG_9691.png',
       'assets/images/rect 6.png',
       'assets/images/rect 58.png',
       'assets/images/rect 114.png'

@@ -16,6 +16,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { ProductCardComponent } from './layout/four-section/product-card/product-card.component';
 import { ProductGroupComponent } from './layout/four-section/product-group/product-group.component';
 import { CardComponent } from './layout/six-section/card/card.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { CardComponent } from './layout/six-section/card/card.component';
   ],
   imports: [
     CommonModule,
-    WebPageRoutingModule
+    WebPageRoutingModule,
+    NgbModule
   ]
 })
 export class WebPageModule { }

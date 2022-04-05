@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/zona-caliente-web",
+            "outputPath": "dist/zona-caliente",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -80,10 +80,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "zona-caliente-web:build:production"
+              "browserTarget": "zona-caliente:build:production"
             },
             "development": {
-              "browserTarget": "zona-caliente-web:build:development"
+              "browserTarget": "zona-caliente:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -91,7 +91,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "zona-caliente-web:build"
+            "browserTarget": "zona-caliente:build"
           }
         },
         "test": {
@@ -118,5 +118,5 @@
       }
     }
   },
-  "defaultProject": "zona-caliente-web"
+  "defaultProject": "zona-caliente"
 }

@@ -1,16 +1,16 @@
 <div class="contacts-container b-yellow">
   <div class="row">
-    <div class="col-2">
+    <div class="col-md-2 mb-10">
       <p class="c-white titles">ENLACES DE INTERÉS</p>
       <a [href]="link.url" class="c-white contents" *ngFor="let link of links">
           {{link.text}} <br>
       </a>
     </div>
-    <div class="col-5">
+    <div class="col-md-5 mb-10">
         <p class="c-white titles">NOSOTROS:</p>
         <p class="c-white contents">{{us}}</p>
     </div>
-    <div class="col-5">
+    <div class="col-md-5 mb-10">
         <p class="c-white titles">DIRECCIÓN:</p>
         <p class="c-white contents">
             {{address}}

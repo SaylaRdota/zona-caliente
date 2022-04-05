@@ -18,10 +18,6 @@ export interface Social {
 export class ContactsComponent implements OnInit {
 
   links: Array<Link> = [
-    {
-      text: 'Legal',
-      url: 'https://google.com'
-    },
    {
       text: 'Contáctenos',
       url: 'https://google.com'

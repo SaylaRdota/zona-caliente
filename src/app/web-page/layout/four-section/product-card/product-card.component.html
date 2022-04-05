@@ -1,0 +1,19 @@
+<div class="product-card">
+  <img [src]="product?.url" alt="">
+  <div class="product-card-container">
+    <div class="row" style="height: 100%;">
+      <div class="col-6 b-primary">
+        <p class="title c-white">{{product?.title}}</p>
+      </div>
+      <div class="col-6 p-10 sd-container">
+        <div class="orange-line b-yellow"></div>
+        <p class="subtitle">
+          {{product?.subtitle}}
+        </p>
+        <p class="description">
+          {{product?.description}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

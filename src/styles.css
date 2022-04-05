@@ -1,0 +1,79 @@
+
+* {
+  font-family: 'Gentle' !important;
+}
+
+@font-face {
+  font-family: Gentle;
+  src: url('assets/fonts/MADE-Gentle.otf');
+}
+
+@font-face {
+  font-family: Fira;
+  src: url('assets/fonts/FiraSans-Regular.otf');
+}
+
+@font-face {
+  font-family: Fira bold;
+  src: url('assets/fonts/FiraSans-SemiBold.otf');
+}
+
+.link-color {
+  color: rgba(36, 117, 238, 0.651);
+}
+
+.b-primary {
+  background-color: #ce2c1f !important;
+}
+
+.b-red {
+  background-color: #e84621 !important;
+}
+
+.b-orange {
+  background-color: #ea5b13;
+}
+
+.b-yellow {
+  background-color: #f48d30;
+}
+
+.b-grey {
+  background-color: rgb(156, 156, 154);
+}
+
+.b-white {
+  background-color: #fff;
+}
+
+.c-primary {
+  color: #ce2c1f;
+}
+
+.c-red {
+  color: #e84621;
+}
+
+.c-orange {
+  color: #ea5b13;
+}
+
+.c-yellow {
+  color: #f48d30;
+}
+
+.c-grey {
+  color: rgb(44, 44, 43);
+}
+
+.c-white {
+  color: white
+}
+
+.parallax {
+  background-image: url('./assets/images/parallax.png');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

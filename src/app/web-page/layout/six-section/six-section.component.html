@@ -1,0 +1,5 @@
+<div class="six-section-container b-red">
+  <div class="card-container" *ngFor="let product of products; let index = index">
+    <app-card [invert]="index % 2 == 0" [product]="product"></app-card>
+  </div>
+</div>

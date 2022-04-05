@@ -78,6 +78,8 @@
   background-size: cover;
 }
 
-.carousel-control-next, .carousel-control-prev {
-  width: 8% !important;
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color: #4544449e;
+  height: 50px!important;
+  width: 40px!important;
 }

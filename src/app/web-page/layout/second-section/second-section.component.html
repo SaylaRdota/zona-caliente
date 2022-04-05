@@ -1,18 +1,18 @@
 <div class="row second-sesison-container">
-  <div class="col-md-4 b-yellow border-aux">
+  <div style="height: 60vh;" class="col-md-4 b-yellow border-aux">
     <img src="assets/images/1.png" alt="">
   </div>
   <div class="col-md-4 border-aux" style="overflow: hidden;">
     <div (mouseenter)="hoveredSession = 2" (mouseleave)="hoveredSession = 1" *ngIf="hoveredSession == 1"
-      style="height: 50%; padding-top: 20%; padding-bottom: 30%;" class="border-aux">
+      style="height: 30vh; padding-top: 20%; padding-bottom: 30%;" class="border-aux">
       <p class="title c-primary">Exportaciones</p>
       <p class="title-two c-primary">Importaciones</p>
     </div>
     <div (mouseenter)="hoveredSession = 2" (mouseleave)="hoveredSession = 1" *ngIf="hoveredSession == 2"
-      style="height: 50%; padding-top: 20%;" class="border-aux">
+      style="height: 30vh; padding-top: 20%;" class="border-aux">
       <p class="c-primary align-text box-text">{{text1}}</p>
     </div>
-    <div (mouseenter)="hoveredSession = 1" (mouseleave)="hoveredSession = 2"  style="height: 50%;" class="b-primary border-aux">
+    <div (mouseenter)="hoveredSession = 1" (mouseleave)="hoveredSession = 2"  style="height: 30vh;" class="b-primary border-aux">
       <div *ngIf="hoveredSession == 2" style="height: 50%; padding-top: 20%; padding-bottom: 30%;"
         class="border-aux">
         <p class="title c-white">Venta mayorista</p>
@@ -24,7 +24,7 @@
 
     </div>
   </div>
-  <div class="col-md-4 border-aux b-grey">
+  <div style="height: 60vh;" class="col-md-4 border-aux b-grey">
     <img src="assets/images/2.png" alt="">
   </div>
 </div>

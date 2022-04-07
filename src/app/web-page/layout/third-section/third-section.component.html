@@ -1,10 +1,10 @@
 <div>
   <p class="title c-primary">¿Que ofrecemos?</p>
 </div>
-<div class="row mb-10">
-  <div *ngFor="let item of icons" class="col-md-3 center">
+<div class="row mb-10 ">
+  <div *ngFor="let item of icons" class="col-4 col-md-3 center">
     <div class="item-container">
-      <img [src]="item.src" alt="">
+      <img class="img" [src]="item.src" alt="">
       <p class="text c-yellow">{{item.text}}</p>
     </div>
   </div>
